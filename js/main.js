@@ -9,7 +9,7 @@ createApp({
     mounted(){
 
         for (let i = 0; i < 10; i++) {
-            axios.get('https://flynn.boolean.careers/exercises/api/random/mail?items=10')
+            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((response) => {
 
                     this.emails.push(response.data.response);
